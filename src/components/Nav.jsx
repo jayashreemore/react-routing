@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
     return (
-        <div className="header-menu">
+        <nav className="header-menu">
             <ul>
                 <li>
                     <NavLink to='/' activeclass='active'>
@@ -10,18 +10,18 @@ function Nav() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/' activeclass='active'>
+                    <NavLink to='/about' activeclass='active'>
                         About
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to='/' activeclass='active'>
+                    <NavLink to='/contact' activeclass='active'>
                         Contact
                     </NavLink>
                 </li>
             </ul>
-        </div>
-    )
+        </nav>
+    );
 }
 
 export default Nav;
