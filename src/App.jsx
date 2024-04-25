@@ -7,7 +7,11 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Review from './pages/Review';
 import './App.css'
+
 
 function App() {
   return (
@@ -19,6 +23,9 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/products' element={<Products />} />
 						<Route path='/product/:pid' element={<Product />} />
+            <Route path='/login' element={<Login />}/>
+            <Route path='/register' element={<Register />}/>
+            <Route path='/review' element={<Review />}/>
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='*' element={<NotFound />} />
